@@ -14,7 +14,8 @@
         { "before": ["leader", "j"], "commands": ["workbench.action.focusBelowGroup"] },
         { "before": ["leader", "k"], "commands": ["workbench.action.focusAboveGroup"] },
         { "before": ["leader", "l"], "commands": ["workbench.action.focusRightGroup"] },
-
+        
+        { "before": ["<C-w>"], "commands": ["workbench.action.closeActiveEditor"] },
         { "before": ["<C-p>"], "commands": ["workbench.action.quickOpen"] },
         { "before": ["<C-j>"], "commands": ["workbench.action.togglePanel"] },
         { "before": ["<C-b>"], "commands": ["workbench.action.toggleSidebarVisibility"] },
