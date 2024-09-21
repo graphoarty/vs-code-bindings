@@ -18,6 +18,5 @@
         { "before": ["<C-w>"], "commands": ["workbench.action.closeActiveEditor"] },
         { "before": ["<C-p>"], "commands": ["workbench.action.quickOpen"] },
         { "before": ["<C-j>"], "commands": ["workbench.action.togglePanel"] },
-        { "before": ["<C-b>"], "commands": ["workbench.files.action.focusFilesExplorer"] },
     ]
 }

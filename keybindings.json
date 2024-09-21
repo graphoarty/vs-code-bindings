@@ -26,6 +26,15 @@
     },
 
     {
+        "command": "workbench.action.toggleSidebarVisibility",
+        "key": "ctrl+b"
+    },
+    {
+        "command": "workbench.files.action.focusFilesExplorer",
+        "key": "ctrl+b",
+        "when": "editorTextFocus"
+    },
+    {
         "key": "n",
         "command": "explorer.newFile",
         "when": "filesExplorerFocus && !inputFocus"
@@ -72,5 +81,5 @@
         "key": "ctrl+d",
         "command": "editor.action.addSelectionToNextFindMatch",
         "when": "editorTextFocus && !editorReadonly"
-    }
+    } 
 ]
