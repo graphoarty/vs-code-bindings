@@ -56,4 +56,21 @@
         "command": "editor.action.moveLinesUpAction",
         "when": "editorTextFocus && !editorReadonly"
     },
+    
+    {
+        "key": "ctrl+shift+alt+j",
+        "command": "cursorColumnSelectDown",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+alt+k",
+        "command": "cursorColumnSelectUp",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+
+    {
+        "key": "ctrl+d",
+        "command": "editor.action.addSelectionToNextFindMatch",
+        "when": "editorTextFocus && !editorReadonly"
+    }
 ]
