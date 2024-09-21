@@ -3,6 +3,7 @@
         "key": "shift+space",
         "command": "toggleVim"
     },
+
     {
         "key": "ctrl+n",
         "command": "workbench.action.terminal.new",
@@ -23,6 +24,7 @@
         "command": "workbench.action.terminal.kill",
         "when": "terminalFocus"
     },
+
     {
         "key": "n",
         "command": "explorer.newFile",
@@ -42,5 +44,16 @@
         "command": "deleteFile",
         "key": "d",
         "when": "filesExplorerFocus && !inputFocus"
+    },
+    
+    {
+        "key": "alt+j",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+k",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
     },
 ]
