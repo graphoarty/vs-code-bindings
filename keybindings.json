@@ -81,5 +81,16 @@
         "key": "ctrl+d",
         "command": "editor.action.addSelectionToNextFindMatch",
         "when": "editorTextFocus && !editorReadonly"
-    } 
+    },
+    
+    {
+        "key": "shift+alt+j",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+k",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    }   
 ]
