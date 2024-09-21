@@ -1,0 +1,23 @@
+{
+    "editor.lineNumbers": "relative",
+    "editor.fontSize": 18,
+    "editor.fontFamily": "JetBrains Mono",
+    "vim.leader": "<Space>",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        { "before": ["<S-h>"], "commands": [":bprevious"] },
+        { "before": ["<S-l>"], "commands": [":bnext"] },
+        
+        { "before": ["leader", "s"], "commands": [":vsplit"] },
+        { "before": ["leader", "v"], "commands": [":split"] },
+
+        { "before": ["leader", "h"], "commands": ["workbench.action.focusLeftGroup"] },
+        { "before": ["leader", "j"], "commands": ["workbench.action.focusBelowGroup"] },
+        { "before": ["leader", "k"], "commands": ["workbench.action.focusAboveGroup"] },
+        { "before": ["leader", "l"], "commands": ["workbench.action.focusRightGroup"] },
+
+        { "before": ["<C-p>"], "commands": ["workbench.action.quickOpen"] },
+        { "before": ["<C-j>"], "commands": ["workbench.action.togglePanel"] },
+        { "before": ["<C-b>"], "commands": ["workbench.action.toggleSidebarVisibility"] },
+        { "before": ["<C-b>"], "commands": ["workbench.files.action.focusFilesExplorer"] },
+    ]
+}
