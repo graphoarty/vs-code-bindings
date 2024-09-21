@@ -90,7 +90,7 @@
     },
     {
         "key": "shift+alt+k",
-        "command": "editor.action.copyLinesDownAction",
+        "command": "editor.action.copyLinesUpAction",
         "when": "editorTextFocus && !editorReadonly"
-    }   
+    }
 ]
