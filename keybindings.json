@@ -1,6 +1,6 @@
 [
     {
-        "key": "shift+space",
+        "key": "f1",
         "command": "toggleVim"
     },
 
@@ -27,12 +27,12 @@
 
     {
         "command": "workbench.action.toggleSidebarVisibility",
-        "key": "ctrl+b"
+        "key": "shift+space",
     },
     {
         "command": "workbench.files.action.focusFilesExplorer",
-        "key": "ctrl+b",
-        "when": "editorTextFocus"
+        "key": "shift+space",
+        "when": "editorTextFocus || !explorerViewletFocus"
     },
     {
         "key": "n",
