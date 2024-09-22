@@ -7,8 +7,11 @@
         { "before": ["<S-j>"], "after": ["<S-l>"] },
         { "before": ["<S-k>"], "after": ["<S-h>"] },
 
-        { "before": ["<S-h>"], "commands": [":bprevious"] },
-        { "before": ["<S-l>"], "commands": [":bnext"] },
+        { "before": ["<S-h>"], "after": ["^"] },
+        { "before": ["<S-l>"], "after": ["$"] },
+        
+        { "before": ["<C-h>"], "commands": [":bprevious"] },
+        { "before": ["<C-l>"], "commands": [":bnext"] },
         
         { "before": ["leader", "s"], "commands": [":vsplit"] },
         { "before": ["leader", "v"], "commands": [":split"] },
@@ -20,6 +23,35 @@
         { "before": ["leader", "j"], "commands": ["workbench.action.focusBelowGroup"] },
         { "before": ["leader", "k"], "commands": ["workbench.action.focusAboveGroup"] },
         { "before": ["leader", "l"], "commands": ["workbench.action.focusRightGroup"] },
+
+        { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] },
+        
+        { "before": ["<C-w>"], "commands": ["workbench.action.closeActiveEditor"] },
+        { "before": ["<C-p>"], "commands": ["workbench.action.quickOpen"] },
+        { "before": ["<C-j>"], "commands": ["workbench.action.togglePanel"] },
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        { "before": ["<S-j>"], "after": ["<S-l>"] },
+        { "before": ["<S-k>"], "after": ["<S-h>"] },
+
+        { "before": ["<S-h>"], "after": ["^"] },
+        { "before": ["<S-l>"], "after": ["$"] },
+
+        { "before": ["<C-h>"], "commands": [":bprevious"] },
+        { "before": ["<C-l>"], "commands": [":bnext"] },
+        
+        { "before": ["leader", "s"], "commands": [":vsplit"] },
+        { "before": ["leader", "v"], "commands": [":split"] },
+
+        { "before": ["leader", "w"], "commands": [":w!"] },
+        { "before": ["leader", "q"], "commands": [":q!"] },
+
+        { "before": ["leader", "h"], "commands": ["workbench.action.focusLeftGroup"] },
+        { "before": ["leader", "j"], "commands": ["workbench.action.focusBelowGroup"] },
+        { "before": ["leader", "k"], "commands": ["workbench.action.focusAboveGroup"] },
+        { "before": ["leader", "l"], "commands": ["workbench.action.focusRightGroup"] },
+
+        { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] },
         
         { "before": ["<C-w>"], "commands": ["workbench.action.closeActiveEditor"] },
         { "before": ["<C-p>"], "commands": ["workbench.action.quickOpen"] },
