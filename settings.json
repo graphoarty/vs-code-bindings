@@ -56,5 +56,12 @@
         { "before": ["<C-w>"], "commands": ["workbench.action.closeActiveEditor"] },
         { "before": ["<C-p>"], "commands": ["workbench.action.quickOpen"] },
         { "before": ["<C-j>"], "commands": ["workbench.action.togglePanel"] },
-    ]
+    ],
+    "vim.operatorPendingModeKeyBindings": [
+        { "before": ["<S-j>"], "after": ["<S-l>"] },
+        { "before": ["<S-k>"], "after": ["<S-h>"] },
+
+        { "before": ["<S-h>"], "after": ["^"] },
+        { "before": ["<S-l>"], "after": ["$"] },
+    ],
 }
