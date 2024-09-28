@@ -1,8 +1,8 @@
 {
     "editor.lineNumbers": "relative",
-    "editor.fontSize": 18,
-    "editor.fontFamily": "JetBrains Mono",
     "vim.leader": "<Space>",
+    "editor.fontSize": 14,
+    "editor.fontFamily": "JetBrains Mono",
     "vim.normalModeKeyBindingsNonRecursive": [
         { "before": ["<S-j>"], "after": ["<S-l>"] },
         { "before": ["<S-k>"], "after": ["<S-h>"] },
@@ -28,7 +28,7 @@
         
         { "before": ["<C-w>"], "commands": ["workbench.action.closeActiveEditor"] },
         { "before": ["<C-p>"], "commands": ["workbench.action.quickOpen"] },
-        { "before": ["<C-j>"], "commands": ["workbench.action.togglePanel"] },
+        { "before": ["<C-j>"], "commands": ["workbench.action.togglePanel"] }
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
         { "before": ["<S-j>"], "after": ["<S-l>"] },
@@ -62,6 +62,9 @@
         { "before": ["<S-k>"], "after": ["<S-h>"] },
 
         { "before": ["<S-h>"], "after": ["^"] },
-        { "before": ["<S-l>"], "after": ["$"] },
-    ]
+        { "before": ["<S-l>"], "after": ["$"] }
+    ],
+    "security.workspace.trust.untrustedFiles": "open",
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false
 }

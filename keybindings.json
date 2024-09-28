@@ -3,6 +3,17 @@
         "key": "f1",
         "command": "toggleVim"
     },
+    
+    {
+        "key": "tab",
+        "command": "tab",
+        "when": "editorTextFocus && !editorReadonly && !editorTabMovesFocus"
+    },
+    {
+        "key": "shift+tab",
+        "command": "outdent",
+        "when": "editorTextFocus && !editorReadonly && !editorTabMovesFocus"
+    },
 
     {
         "key": "ctrl+n",
@@ -27,11 +38,11 @@
 
     {
         "command": "workbench.action.toggleSidebarVisibility",
-        "key": "shift+space",
+        "key": "ctrl+b",
     },
     {
         "command": "workbench.files.action.focusFilesExplorer",
-        "key": "shift+space",
+        "key": "ctrl+b",
         "when": "editorTextFocus || !explorerViewletFocus"
     },
     {
