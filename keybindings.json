@@ -3,7 +3,18 @@
         "key": "f1",
         "command": "toggleVim"
     },
-    
+
+    {
+        "key": "ctrl+j",
+        "command": "selectNextSuggestion",
+        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "selectPrevSuggestion",
+        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+    },
+
     {
         "key": "tab",
         "command": "tab",
@@ -14,7 +25,7 @@
         "command": "outdent",
         "when": "editorTextFocus && !editorReadonly && !editorTabMovesFocus"
     },
-
+     
     {
         "key": "ctrl+n",
         "command": "workbench.action.terminal.new",
@@ -35,7 +46,6 @@
         "command": "workbench.action.terminal.kill",
         "when": "terminalFocus"
     },
-
     {
         "command": "workbench.action.toggleSidebarVisibility",
         "key": "ctrl+e",
@@ -65,7 +75,6 @@
         "key": "d",
         "when": "filesExplorerFocus && !inputFocus"
     },
-    
     {
         "key": "alt+j",
         "command": "editor.action.moveLinesDownAction",
@@ -76,7 +85,6 @@
         "command": "editor.action.moveLinesUpAction",
         "when": "editorTextFocus && !editorReadonly"
     },
-    
     {
         "key": "ctrl+shift+alt+j",
         "command": "cursorColumnSelectDown",
@@ -87,13 +95,11 @@
         "command": "cursorColumnSelectUp",
         "when": "editorTextFocus && !editorReadonly"
     },
-
     {
         "key": "ctrl+d",
         "command": "editor.action.addSelectionToNextFindMatch",
         "when": "editorTextFocus && !editorReadonly"
     },
-    
     {
         "key": "shift+alt+j",
         "command": "editor.action.copyLinesDownAction",
