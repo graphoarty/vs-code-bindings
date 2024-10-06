@@ -25,7 +25,6 @@
         "command": "outdent",
         "when": "editorTextFocus && !editorReadonly && !editorTabMovesFocus"
     },
-     
     {
         "key": "ctrl+n",
         "command": "workbench.action.terminal.new",

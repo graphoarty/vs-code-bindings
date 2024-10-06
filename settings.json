@@ -17,12 +17,13 @@
 
         { "before": ["leader", "w"], "commands": [":w!"] },
         { "before": ["leader", "q"], "commands": [":q!"] },
-
+        { "before": ["leader", "x"], "commands": [":xa!"] },
+        
         { "before": ["leader", "h"], "commands": ["workbench.action.focusLeftGroup"] },
         { "before": ["leader", "j"], "commands": ["workbench.action.focusBelowGroup"] },
         { "before": ["leader", "k"], "commands": ["workbench.action.focusAboveGroup"] },
         { "before": ["leader", "l"], "commands": ["workbench.action.focusRightGroup"] },
-
+        
         { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] },
         
         { "before": ["<C-w>"], "commands": ["workbench.action.closeActiveEditor"] },
@@ -32,18 +33,19 @@
     "vim.visualModeKeyBindingsNonRecursive": [
         { "before": ["<S-j>"], "after": ["1", "0", "j"] },
         { "before": ["<S-k>"], "after": ["1", "0", "k"] },
-
+        
         { "before": ["<S-h>"], "after": ["^"] },
         { "before": ["<S-l>"], "after": ["$"] },
-
+        
         { "before": ["<C-h>"], "commands": [":bprevious"] },
         { "before": ["<C-l>"], "commands": [":bnext"] },
         
         { "before": ["leader", "s"], "commands": [":vsplit"] },
         { "before": ["leader", "v"], "commands": [":split"] },
-
+        
         { "before": ["leader", "w"], "commands": [":w!"] },
         { "before": ["leader", "q"], "commands": [":q!"] },
+        { "before": ["leader", "x"], "commands": [":xa!"] },
 
         { "before": ["leader", "h"], "commands": ["workbench.action.focusLeftGroup"] },
         { "before": ["leader", "j"], "commands": ["workbench.action.focusBelowGroup"] },
@@ -66,4 +68,5 @@
     "security.workspace.trust.untrustedFiles": "open",
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
+    "editor.minimap.enabled": false,
 }
