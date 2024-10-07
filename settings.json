@@ -9,9 +9,6 @@
         { "before": ["<S-h>"], "after": ["^"] },
         { "before": ["<S-l>"], "after": ["$"] },
         
-        { "before": ["<C-h>"], "commands": [":bprevious"] },
-        { "before": ["<C-l>"], "commands": [":bnext"] },
-        
         { "before": ["leader", "s"], "commands": [":vsplit"] },
         { "before": ["leader", "v"], "commands": [":split"] },
 
@@ -25,10 +22,6 @@
         { "before": ["leader", "l"], "commands": ["workbench.action.focusRightGroup"] },
         
         { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] },
-        
-        { "before": ["<C-w>"], "commands": ["workbench.action.closeActiveEditor"] },
-        { "before": ["<C-p>"], "commands": ["workbench.action.quickOpen"] },
-        { "before": ["<C-j>"], "commands": ["workbench.action.togglePanel"] },
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
         { "before": ["<S-j>"], "after": ["1", "0", "j"] },
@@ -37,9 +30,6 @@
         { "before": ["<S-h>"], "after": ["^"] },
         { "before": ["<S-l>"], "after": ["$"] },
         
-        { "before": ["<C-h>"], "commands": [":bprevious"] },
-        { "before": ["<C-l>"], "commands": [":bnext"] },
-        
         { "before": ["leader", "s"], "commands": [":vsplit"] },
         { "before": ["leader", "v"], "commands": [":split"] },
         
@@ -53,10 +43,6 @@
         { "before": ["leader", "l"], "commands": ["workbench.action.focusRightGroup"] },
 
         { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] },
-        
-        { "before": ["<C-w>"], "commands": ["workbench.action.closeActiveEditor"] },
-        { "before": ["<C-p>"], "commands": ["workbench.action.quickOpen"] },
-        { "before": ["<C-j>"], "commands": ["workbench.action.togglePanel"] },
     ],
     "vim.operatorPendingModeKeyBindings": [
         { "before": ["<S-j>"], "after": ["1", "0", "j"] },
@@ -69,4 +55,7 @@
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
     "editor.minimap.enabled": false,
+    "editor.fontSize": 14,
+    "cmake.showOptionsMovedNotification": false,
+    "keyboard.dispatch": "keyCode",
 }
