@@ -3,20 +3,18 @@
         "key": "f1",
         "command": "toggleVim"
     },
-
     {
         "key": "cmd+w",
-        "command": "workbench.action.closeActiveEditor",
+        "command": "workbench.action.closeActiveEditor"
     },
     {
         "key": "cmd+p",
-        "command": "workbench.action.quickOpen",
+        "command": "workbench.action.quickOpen"
     },
     {
         "key": "cmd+j",
-        "command": "workbench.action.togglePanel",
+        "command": "workbench.action.togglePanel"
     },
-    
     {
         "key": "cmd+h",
         "command": "workbench.action.previousEditor",
@@ -27,76 +25,26 @@
         "command": "workbench.action.nextEditor",
         "when": "editorTextFocus && vim.active"
     },
-
     {
         "key": "cmd+j",
         "command": "selectNextSuggestion",
-        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible && vim.active"
     },
     {
         "key": "cmd+k",
         "command": "selectPrevSuggestion",
-        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible && vim.active"
     },
 
     {
         "key": "tab",
         "command": "tab",
-        "when": "editorTextFocus && !editorReadonly && !editorTabMovesFocus"
+        "when": "editorTextFocus && !editorReadonly && !editorTabMovesFocus && vim.active"
     },
     {
         "key": "shift+tab",
         "command": "outdent",
-        "when": "editorTextFocus && !editorReadonly && !editorTabMovesFocus"
-    },
-    {
-        "key": "cmd+n",
-        "command": "workbench.action.terminal.new",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "cmd+l",
-        "command": "workbench.action.terminal.focusNext",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "cmd+h",
-        "command": "workbench.action.terminal.focusPrevious",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "cmd+k",
-        "command": "workbench.action.terminal.kill",
-        "when": "terminalFocus"
-    },
-    {
-        "command": "workbench.action.toggleSidebarVisibility",
-        "key": "cmd+e",
-    },
-    {
-        "command": "workbench.files.action.focusFilesExplorer",
-        "key": "cmd+e",
-        "when": "editorTextFocus || !explorerViewletFocus"
-    },
-    {
-        "key": "n",
-        "command": "explorer.newFile",
-        "when": "filesExplorerFocus && !inputFocus"
-    },
-    {
-        "command": "renameFile",
-        "key": "r",
-        "when": "filesExplorerFocus && !inputFocus"
-    },
-    {
-        "key": "shift+n",
-        "command": "explorer.newFolder",
-        "when": "explorerViewletFocus"
-    },
-    {
-        "command": "deleteFile",
-        "key": "d",
-        "when": "filesExplorerFocus && !inputFocus"
+        "when": "editorTextFocus && !editorReadonly && !editorTabMovesFocus && vim.active"
     },
     {
         "key": "alt+j",
@@ -132,5 +80,54 @@
         "key": "shift+alt+k",
         "command": "editor.action.copyLinesUpAction",
         "when": "editorTextFocus && !editorReadonly && vim.active"
+    },
+    {
+        "key": "cmd+n",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+l",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+h",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+k",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+e",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "command": "workbench.files.action.focusFilesExplorer",
+        "key": "cmd+e",
+        "when": "editorTextFocus || !explorerViewletFocus"
+    },
+    {
+        "key": "n",
+        "command": "explorer.newFile",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "command": "renameFile",
+        "key": "r",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "shift+n",
+        "command": "explorer.newFolder",
+        "when": "explorerViewletFocus"
+    },
+    {
+        "command": "deleteFile",
+        "key": "d",
+        "when": "filesExplorerFocus && !inputFocus"
     }
 ]

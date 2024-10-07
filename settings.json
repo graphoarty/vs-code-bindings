@@ -2,6 +2,9 @@
     "editor.lineNumbers": "relative",
     "vim.leader": "<Space>",
     "editor.fontFamily": "JetBrains Mono",
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "editor.fontSize": 14,
     "vim.normalModeKeyBindingsNonRecursive": [
         { "before": ["<S-j>"], "after": ["1", "0", "j"] },
         { "before": ["<S-k>"], "after": ["1", "0", "k"] },
@@ -50,12 +53,5 @@
 
         { "before": ["<S-h>"], "after": ["^"] },
         { "before": ["<S-l>"], "after": ["$"] },
-    ],
-    "security.workspace.trust.untrustedFiles": "open",
-    "git.enableSmartCommit": true,
-    "git.confirmSync": false,
-    "editor.minimap.enabled": false,
-    "editor.fontSize": 14,
-    "cmake.showOptionsMovedNotification": false,
-    "keyboard.dispatch": "keyCode",
+    ]
 }
