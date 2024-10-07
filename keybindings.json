@@ -5,12 +5,36 @@
     },
 
     {
-        "key": "ctrl+j",
+        "key": "cmd+w",
+        "command": "workbench.action.closeActiveEditor",
+    },
+    {
+        "key": "cmd+p",
+        "command": "workbench.action.quickOpen",
+    },
+    {
+        "key": "cmd+j",
+        "command": "workbench.action.togglePanel",
+    },
+    
+    {
+        "key": "cmd+h",
+        "command": "workbench.action.previousEditor",
+        "when": "editorTextFocus && vim.active"
+    },
+    {
+        "key": "cmd+l",
+        "command": "workbench.action.nextEditor",
+        "when": "editorTextFocus && vim.active"
+    },
+
+    {
+        "key": "cmd+j",
         "command": "selectNextSuggestion",
         "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
     },
     {
-        "key": "ctrl+k",
+        "key": "cmd+k",
         "command": "selectPrevSuggestion",
         "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
     },
@@ -26,32 +50,32 @@
         "when": "editorTextFocus && !editorReadonly && !editorTabMovesFocus"
     },
     {
-        "key": "ctrl+n",
+        "key": "cmd+n",
         "command": "workbench.action.terminal.new",
         "when": "terminalFocus"
     },
     {
-        "key": "ctrl+l",
+        "key": "cmd+l",
         "command": "workbench.action.terminal.focusNext",
         "when": "terminalFocus"
     },
     {
-        "key": "ctrl+h",
+        "key": "cmd+h",
         "command": "workbench.action.terminal.focusPrevious",
         "when": "terminalFocus"
     },
     {
-        "key": "ctrl+k",
+        "key": "cmd+k",
         "command": "workbench.action.terminal.kill",
         "when": "terminalFocus"
     },
     {
         "command": "workbench.action.toggleSidebarVisibility",
-        "key": "ctrl+e",
+        "key": "cmd+e",
     },
     {
         "command": "workbench.files.action.focusFilesExplorer",
-        "key": "ctrl+e",
+        "key": "cmd+e",
         "when": "editorTextFocus || !explorerViewletFocus"
     },
     {
@@ -77,36 +101,36 @@
     {
         "key": "alt+j",
         "command": "editor.action.moveLinesDownAction",
-        "when": "editorTextFocus && !editorReadonly"
+        "when": "editorTextFocus && !editorReadonly && vim.active"
     },
     {
         "key": "alt+k",
         "command": "editor.action.moveLinesUpAction",
-        "when": "editorTextFocus && !editorReadonly"
+        "when": "editorTextFocus && !editorReadonly && vim.active"
     },
     {
-        "key": "ctrl+shift+alt+j",
+        "key": "cmd+shift+alt+j",
         "command": "cursorColumnSelectDown",
-        "when": "editorTextFocus && !editorReadonly"
+        "when": "editorTextFocus && !editorReadonly && vim.active"
     },
     {
-        "key": "ctrl+shift+alt+k",
+        "key": "cmd+shift+alt+k",
         "command": "cursorColumnSelectUp",
-        "when": "editorTextFocus && !editorReadonly"
+        "when": "editorTextFocus && !editorReadonly && vim.active"
     },
     {
-        "key": "ctrl+d",
+        "key": "cmd+d",
         "command": "editor.action.addSelectionToNextFindMatch",
-        "when": "editorTextFocus && !editorReadonly"
+        "when": "editorTextFocus && !editorReadonly && vim.active"
     },
     {
         "key": "shift+alt+j",
         "command": "editor.action.copyLinesDownAction",
-        "when": "editorTextFocus && !editorReadonly"
+        "when": "editorTextFocus && !editorReadonly && vim.active"
     },
     {
         "key": "shift+alt+k",
         "command": "editor.action.copyLinesUpAction",
-        "when": "editorTextFocus && !editorReadonly"
+        "when": "editorTextFocus && !editorReadonly && vim.active"
     }
 ]
