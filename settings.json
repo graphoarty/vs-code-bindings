@@ -5,6 +5,19 @@
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
     "editor.fontSize": 14,
+    "editor.minimap.enabled": false,
+    "workbench.activityBar.location": "hidden",
+    "breadcrumbs.enabled": false,
+    "editor.showFoldingControls": "never",
+    "editor.glyphMargin": false,
+    "window.customTitleBarVisibility": "windowed",
+    "window.commandCenter": false,
+    "workbench.layoutControl.enabled": false,
+    "workbench.editor.editorActionsLocation": "hidden",
+    "editor.overviewRulerBorder": false,
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.scrollbar.vertical": "hidden",
+    "editor.scrollbar.horizontal": "hidden",
     "vim.normalModeKeyBindingsNonRecursive": [
         { "before": ["<S-j>"], "after": ["1", "0", "j"] },
         { "before": ["<S-k>"], "after": ["1", "0", "k"] },
@@ -53,5 +66,5 @@
 
         { "before": ["<S-h>"], "after": ["^"] },
         { "before": ["<S-l>"], "after": ["$"] },
-    ]
+    ],
 }
