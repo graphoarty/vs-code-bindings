@@ -16,6 +16,11 @@
         "command": "workbench.action.togglePanel"
     },
     {
+        "key": "ctrl+r",
+        "command": "editor.action.startFindReplaceAction",
+        "when": "editorTextFocus && vim.active"
+    },
+    {
         "key": "ctrl+h",
         "command": "workbench.action.previousEditor",
         "when": "editorTextFocus && vim.active"
