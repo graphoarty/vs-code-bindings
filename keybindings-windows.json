@@ -4,6 +4,11 @@
         "command": "toggleVim"
     },
     {
+        "key": "alt+space",
+        "command": "editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly"
+    },
+    {
         "key": "ctrl+w",
         "command": "workbench.action.closeActiveEditor"
     },
