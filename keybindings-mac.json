@@ -4,17 +4,16 @@
         "command": "toggleVim"
     },
     {
-        "key": "alt+space",
-        "command": "editor.action.triggerSuggest",
-        "when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly"
-    },
-    {
         "key": "cmd+w",
         "command": "workbench.action.closeActiveEditor",
     },
     {
         "key": "cmd+p",
         "command": "workbench.action.quickOpen",
+    },
+    {
+        "key": "cmd+shift+g",
+        "command": "workbench.view.scm",
     },
     {
         "key": "cmd+j",
@@ -35,7 +34,11 @@
         "command": "workbench.action.nextEditor",
         "when": "editorTextFocus && vim.active"
     },
-
+    {
+        "key": "alt+space",
+        "command": "editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly"
+    },
     {
         "key": "cmd+j",
         "command": "selectNextSuggestion",
@@ -46,7 +49,6 @@
         "command": "selectPrevSuggestion",
         "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
     },
-
     {
         "key": "tab",
         "command": "tab",
