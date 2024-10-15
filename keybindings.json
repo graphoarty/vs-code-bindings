@@ -4,33 +4,38 @@
         "command": "toggleVim"
     },
     {
-        "key": "cmd+w",
-        "command": "workbench.action.closeActiveEditor",
+        "key": "ctrl+w",
+        "command": "workbench.action.closeActiveEditor"
     },
     {
-        "key": "cmd+p",
-        "command": "workbench.action.quickOpen",
+        "key": "ctrl+p",
+        "command": "workbench.action.quickOpen"
     },
     {
-        "key": "cmd+shift+g",
-        "command": "workbench.view.scm",
+        "key": "ctrl+shift+g",
+        "command": "workbench.view.scm"
     },
     {
-        "key": "cmd+j",
-        "command": "workbench.action.togglePanel",
+        "key": "ctrl+j",
+        "command": "workbench.action.togglePanel"
     },
     {
-        "key": "cmd+r",
+        "key": "ctrl+f",
+        "command": "actions.find",
+        "when": "editorTextFocus && vim.active"
+    },
+    {
+        "key": "ctrl+r",
         "command": "editor.action.startFindReplaceAction",
         "when": "editorTextFocus && vim.active"
     },
     {
-        "key": "cmd+h",
+        "key": "ctrl+h",
         "command": "workbench.action.previousEditor",
         "when": "editorTextFocus && vim.active"
     },
     {
-        "key": "cmd+l",
+        "key": "ctrl+l",
         "command": "workbench.action.nextEditor",
         "when": "editorTextFocus && vim.active"
     },
@@ -40,12 +45,12 @@
         "when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly"
     },
     {
-        "key": "cmd+j",
+        "key": "ctrl+j",
         "command": "selectNextSuggestion",
         "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
     },
     {
-        "key": "cmd+k",
+        "key": "ctrl+k",
         "command": "selectPrevSuggestion",
         "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
     },
@@ -60,32 +65,32 @@
         "when": "editorTextFocus && !editorReadonly && !editorTabMovesFocus"
     },
     {
-        "key": "cmd+n",
+        "key": "ctrl+n",
         "command": "workbench.action.terminal.new",
         "when": "terminalFocus"
     },
     {
-        "key": "cmd+l",
+        "key": "ctrl+l",
         "command": "workbench.action.terminal.focusNext",
         "when": "terminalFocus"
     },
     {
-        "key": "cmd+h",
+        "key": "ctrl+h",
         "command": "workbench.action.terminal.focusPrevious",
         "when": "terminalFocus"
     },
     {
-        "key": "cmd+k",
+        "key": "ctrl+k",
         "command": "workbench.action.terminal.kill",
         "when": "terminalFocus"
     },
     {
         "command": "workbench.action.toggleSidebarVisibility",
-        "key": "cmd+e",
+        "key": "ctrl+e"
     },
     {
         "command": "workbench.files.action.focusFilesExplorer",
-        "key": "cmd+e",
+        "key": "ctrl+e",
         "when": "editorTextFocus || !explorerViewletFocus"
     },
     {
@@ -119,17 +124,17 @@
         "when": "editorTextFocus && !editorReadonly && vim.active"
     },
     {
-        "key": "cmd+shift+alt+j",
+        "key": "ctrl+shift+alt+j",
         "command": "cursorColumnSelectDown",
         "when": "editorTextFocus && !editorReadonly && vim.active"
     },
     {
-        "key": "cmd+shift+alt+k",
+        "key": "ctrl+shift+alt+k",
         "command": "cursorColumnSelectUp",
         "when": "editorTextFocus && !editorReadonly && vim.active"
     },
     {
-        "key": "cmd+d",
+        "key": "ctrl+d",
         "command": "editor.action.addSelectionToNextFindMatch",
         "when": "editorTextFocus && !editorReadonly && vim.active"
     },
