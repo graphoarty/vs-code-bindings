@@ -4,7 +4,7 @@
     "editor.fontFamily": "JetBrains Mono",
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
-    "editor.fontSize": 14,
+    "editor.fontSize": 16,
     "editor.minimap.enabled": false,
     "workbench.activityBar.location": "hidden",
     "breadcrumbs.enabled": false,
@@ -19,52 +19,301 @@
     "editor.scrollbar.vertical": "hidden",
     "editor.scrollbar.horizontal": "hidden",
     "vim.normalModeKeyBindingsNonRecursive": [
-        { "before": ["<S-j>"], "after": ["1", "0", "j"] },
-        { "before": ["<S-k>"], "after": ["1", "0", "k"] },
-
-        { "before": ["<S-h>"], "after": ["^"] },
-        { "before": ["<S-l>"], "after": ["$"] },
-        
-        { "before": ["leader", "s"], "commands": [":vsplit"] },
-        { "before": ["leader", "v"], "commands": [":split"] },
-
-        { "before": ["leader", "w"], "commands": [":w!"] },
-        { "before": ["leader", "q"], "commands": [":q!"] },
-        { "before": ["leader", "x"], "commands": [":xa!"] },
-        
-        { "before": ["leader", "h"], "commands": ["workbench.action.focusLeftGroup"] },
-        { "before": ["leader", "j"], "commands": ["workbench.action.focusBelowGroup"] },
-        { "before": ["leader", "k"], "commands": ["workbench.action.focusAboveGroup"] },
-        { "before": ["leader", "l"], "commands": ["workbench.action.focusRightGroup"] },
-        
-        { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] },
+        {
+            "before": [
+                "<S-j>"
+            ],
+            "after": [
+                "1",
+                "0",
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "<S-k>"
+            ],
+            "after": [
+                "1",
+                "0",
+                "k"
+            ]
+        },
+        {
+            "before": [
+                "<S-h>"
+            ],
+            "after": [
+                "^"
+            ]
+        },
+        {
+            "before": [
+                "<S-l>"
+            ],
+            "after": [
+                "$"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "s"
+            ],
+            "commands": [
+                ":vsplit"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "v"
+            ],
+            "commands": [
+                ":split"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "w"
+            ],
+            "commands": [
+                ":w!"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "q"
+            ],
+            "commands": [
+                ":q!"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "x"
+            ],
+            "commands": [
+                ":xa!"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "h"
+            ],
+            "commands": [
+                "workbench.action.focusLeftGroup"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "j"
+            ],
+            "commands": [
+                "workbench.action.focusBelowGroup"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "k"
+            ],
+            "commands": [
+                "workbench.action.focusAboveGroup"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "l"
+            ],
+            "commands": [
+                "workbench.action.focusRightGroup"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "c"
+            ],
+            "commands": [
+                "editor.action.commentLine"
+            ]
+        },
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
-        { "before": ["<S-j>"], "after": ["1", "0", "j"] },
-        { "before": ["<S-k>"], "after": ["1", "0", "k"] },
-        
-        { "before": ["<S-h>"], "after": ["^"] },
-        { "before": ["<S-l>"], "after": ["$"] },
-        
-        { "before": ["leader", "s"], "commands": [":vsplit"] },
-        { "before": ["leader", "v"], "commands": [":split"] },
-        
-        { "before": ["leader", "w"], "commands": [":w!"] },
-        { "before": ["leader", "q"], "commands": [":q!"] },
-        { "before": ["leader", "x"], "commands": [":xa!"] },
-
-        { "before": ["leader", "h"], "commands": ["workbench.action.focusLeftGroup"] },
-        { "before": ["leader", "j"], "commands": ["workbench.action.focusBelowGroup"] },
-        { "before": ["leader", "k"], "commands": ["workbench.action.focusAboveGroup"] },
-        { "before": ["leader", "l"], "commands": ["workbench.action.focusRightGroup"] },
-
-        { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] },
+        {
+            "before": [
+                "<S-j>"
+            ],
+            "after": [
+                "1",
+                "0",
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "<S-k>"
+            ],
+            "after": [
+                "1",
+                "0",
+                "k"
+            ]
+        },
+        {
+            "before": [
+                "<S-h>"
+            ],
+            "after": [
+                "^"
+            ]
+        },
+        {
+            "before": [
+                "<S-l>"
+            ],
+            "after": [
+                "$"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "s"
+            ],
+            "commands": [
+                ":vsplit"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "v"
+            ],
+            "commands": [
+                ":split"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "w"
+            ],
+            "commands": [
+                ":w!"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "q"
+            ],
+            "commands": [
+                ":q!"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "x"
+            ],
+            "commands": [
+                ":xa!"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "h"
+            ],
+            "commands": [
+                "workbench.action.focusLeftGroup"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "j"
+            ],
+            "commands": [
+                "workbench.action.focusBelowGroup"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "k"
+            ],
+            "commands": [
+                "workbench.action.focusAboveGroup"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "l"
+            ],
+            "commands": [
+                "workbench.action.focusRightGroup"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "c"
+            ],
+            "commands": [
+                "editor.action.commentLine"
+            ]
+        },
     ],
     "vim.operatorPendingModeKeyBindings": [
-        { "before": ["<S-j>"], "after": ["1", "0", "j"] },
-        { "before": ["<S-k>"], "after": ["1", "0", "k"] },
-
-        { "before": ["<S-h>"], "after": ["^"] },
-        { "before": ["<S-l>"], "after": ["$"] },
+        {
+            "before": [
+                "<S-j>"
+            ],
+            "after": [
+                "1",
+                "0",
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "<S-k>"
+            ],
+            "after": [
+                "1",
+                "0",
+                "k"
+            ]
+        },
+        {
+            "before": [
+                "<S-h>"
+            ],
+            "after": [
+                "^"
+            ]
+        },
+        {
+            "before": [
+                "<S-l>"
+            ],
+            "after": [
+                "$"
+            ]
+        },
     ],
+    "editor.formatOnSave": true,
+    "cmake.showOptionsMovedNotification": false,
+    "editor.wordWrap": "on",
+    "workbench.colorTheme": "Tokyo Night",
 }
