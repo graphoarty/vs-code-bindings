@@ -4,6 +4,11 @@
         "command": "toggleVim"
     },
     {
+        "key": "ctrl+space",
+        "command": "editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly"
+    },
+    {
         "key": "ctrl+w",
         "command": "workbench.action.closeActiveEditor"
     },
@@ -18,6 +23,16 @@
     {
         "key": "ctrl+j",
         "command": "workbench.action.togglePanel"
+    },
+    {
+        "key": "ctrl+shift+z",
+        "command": "redo",
+        "when": "editorTextFocus && vim.active"
+    },
+    {
+        "key": "ctrl+a",
+        "command": "editor.action.selectAll",
+        "when": "editorTextFocus && vim.active"
     },
     {
         "key": "ctrl+f",
@@ -40,9 +55,14 @@
         "when": "editorTextFocus && vim.active"
     },
     {
-        "key": "alt+space",
-        "command": "editor.action.triggerSuggest",
-        "when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly"
+        "key": "ctrl+j",
+        "command": "workbench.action.quickOpenNavigateNext",
+        "when": "inFilesPicker && inQuickOpen"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.quickOpenNavigatePrevious",
+        "when": "inFilesPicker && inQuickOpen"
     },
     {
         "key": "ctrl+j",

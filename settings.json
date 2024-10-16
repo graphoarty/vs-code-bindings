@@ -144,7 +144,7 @@
             "commands": [
                 "editor.action.commentLine"
             ]
-        },
+        }
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
         {
@@ -272,7 +272,7 @@
             "commands": [
                 "editor.action.commentLine"
             ]
-        },
+        }
     ],
     "vim.operatorPendingModeKeyBindings": [
         {
@@ -310,10 +310,10 @@
             "after": [
                 "$"
             ]
-        },
+        }
     ],
     "editor.formatOnSave": true,
     "cmake.showOptionsMovedNotification": false,
     "editor.wordWrap": "on",
-    "workbench.colorTheme": "Tokyo Night",
+    "workbench.colorTheme": "Tokyo Night"
 }
