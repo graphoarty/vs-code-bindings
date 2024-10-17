@@ -144,6 +144,14 @@
             "commands": [
                 "editor.action.commentLine"
             ]
+        },
+        {
+            "before": [
+                "u"
+            ],
+            "commands": [
+                "undo"
+            ]
         }
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
@@ -309,6 +317,14 @@
             ],
             "after": [
                 "$"
+            ]
+        },
+        {
+            "before": [
+                "u"
+            ],
+            "commands": [
+                "undo"
             ]
         }
     ],
