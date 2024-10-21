@@ -168,7 +168,7 @@
         "command": "editor.action.copyLinesUpAction",
         "when": "editorTextFocus && !editorReadonly && vim.active"
     },
-        {
+    {
         "key": "shift+;",
         "command": "editor.action.joinLines",
         "when": "editorTextFocus && !editorReadonly && vim.active && vim.mode == 'Normal'"
