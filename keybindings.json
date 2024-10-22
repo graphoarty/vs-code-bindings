@@ -134,6 +134,11 @@
         "when": "filesExplorerFocus && !inputFocus"
     },
     {
+        "command": "workbench.files.action.collapseExplorerFolders",
+        "key": "shift+h",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
         "key": "alt+j",
         "command": "editor.action.moveLinesDownAction",
         "when": "editorTextFocus && !editorReadonly && vim.active"
